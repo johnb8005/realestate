@@ -22,11 +22,7 @@ export default () => {
   return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("h1", null, title), /* @__PURE__ */ React.createElement(FormUI, {
     onSuccess: (v) => setData(v)
   }), data && /* @__PURE__ */ React.createElement(Result, {
-    data: {
-      annualRevenue: 190 * 1e3,
-      equity: 260 * 1e3,
-      price: 750 * 1e3
-    }
+    data
   }), /* @__PURE__ */ React.createElement("p", null, /* @__PURE__ */ React.createElement("a", {
     href: github.url
   }, /* @__PURE__ */ React.createElement("i", {
