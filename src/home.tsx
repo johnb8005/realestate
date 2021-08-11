@@ -78,15 +78,7 @@ export default () => {
       <h1>{title}</h1>
 
       <FormUI onSuccess={(v) => setData(v)} />
-      {data && (
-        <Result
-          data={{
-            annualRevenue: 190 * 1000,
-            equity: 260 * 1000,
-            price: 750 * 1000,
-          }}
-        />
-      )}
+      {data && <Result data={data} />}
 
       <p>
         <a href={github.url}>
